@@ -1,5 +1,5 @@
 ################################################
-# __init__.py in BudgetAJ
+# __init__.py in budget_aj_app
 ################################################
 import os
 from flask import Flask
