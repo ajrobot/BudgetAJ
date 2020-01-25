@@ -27,7 +27,7 @@ Jinja2==2.10.3
 lazy==1.4
 Mako==1.1.0
 MarkupSafe==1.1.1
-mkl-fft==1.0.14
+mkl-fft==1.0.6
 mkl-random==1.0.4
 mkl-service==2.3.0
 numpy==1.17.0
