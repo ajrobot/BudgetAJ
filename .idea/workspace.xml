@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="adc780b3-c089-4e4e-9358-6ed1a606e043" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/budget_aj_app/core/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/budget_aj_app/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/budget_aj_app/static/styles/basic.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/budget_aj_app/static/styles/login&amp;create.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/budget_aj_app/templates/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/budget_aj_app/templates/app_info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/budget_aj_app/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/budget_aj_app/templates/create_account.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/budget_aj_app/templates/edit_budget.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/budget_aj_app/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/budget_aj_app/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/budget_aj_app/templates/user_bill.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/budget_aj_app/templates/user_dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/budget_aj_app/templates/user_profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/budget_aj_app/users/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_aj_app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_aj_app/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/users/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_aj_app/users/viewa.py" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/core/__init__.py" afterDir="false" />
-    </list>
+    <list default="true" id="adc780b3-c089-4e4e-9358-6ed1a606e043" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +32,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/budget_aj_app/users/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="689">
+            <state relative-caret-position="1411">
               <caret line="91" selection-start-line="91" selection-end-line="91" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
@@ -64,10 +42,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/migrations/Procfile">
+        <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -207,7 +185,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="3" />
     <option name="y" value="7" />
     <option name="width" value="1936" />
@@ -218,7 +196,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -226,15 +203,11 @@
               <item name="BudgetAJ" type="b2602c69:ProjectViewProjectNode" />
               <item name="BudgetAJ" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="BudgetAJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BudgetAJ" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -247,6 +220,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\JOJO\Documents\Home Budget Project\BudgetAJ" />
       <recent name="C:\Users\JOJO\Documents\Home Budget Project\BudgetAJ\budget_aj_app\static\styles" />
       <recent name="C:\Users\JOJO\Documents\Home Budget Project\BudgetAJ\budget_aj_app\templates" />
     </key>
@@ -318,16 +292,17 @@
       <workItem from="1579744450894" duration="3767000" />
       <workItem from="1579841888580" duration="10953000" />
       <workItem from="1579928246843" duration="838000" />
+      <workItem from="1579931905285" duration="722000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="363625000" />
+    <option name="totallyTimeSpent" value="364347000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2017" y="23" width="1936" height="1176" extended-state="0" />
+    <frame x="3" y="7" width="1936" height="1176" extended-state="1" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24147122" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24413647" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -491,6 +466,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/requiremets.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/budget_aj_app/users/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/budget_aj_app/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -550,23 +538,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requiremets.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/users/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="689">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/Procfile">
+    <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
