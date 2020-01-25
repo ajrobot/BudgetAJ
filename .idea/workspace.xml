@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adc780b3-c089-4e4e-9358-6ed1a606e043" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/budget_aj_app/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/users/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/budget_aj_app/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,13 +34,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/budget_aj_app/users/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="689">
-              <caret line="91" selection-start-line="91" selection-end-line="91" />
+            <state relative-caret-position="459">
+              <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/budget_aj_app/users/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#120#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -52,20 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" column="15" lean-forward="true" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/budget_aj_app/templates/create_account.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="889">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
             </state>
           </provider>
         </entry>
@@ -178,10 +184,10 @@
         <option value="$PROJECT_DIR$/budget_aj_app/static/styles/dashboard.css" />
         <option value="$PROJECT_DIR$/budget_aj_app/templates/create_budget.html" />
         <option value="$PROJECT_DIR$/budget_aj_app/static/styles/basic.css" />
-        <option value="$PROJECT_DIR$/budget_aj_app/users/views.py" />
-        <option value="$PROJECT_DIR$/budget_aj_app/users/forms.py" />
         <option value="$PROJECT_DIR$/migrations/Procfile" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/budget_aj_app/users/views.py" />
+        <option value="$PROJECT_DIR$/budget_aj_app/users/forms.py" />
       </list>
     </option>
   </component>
@@ -202,6 +208,17 @@
             <path>
               <item name="BudgetAJ" type="b2602c69:ProjectViewProjectNode" />
               <item name="BudgetAJ" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BudgetAJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BudgetAJ" type="462c0819:PsiDirectoryNode" />
+              <item name="budget_aj_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BudgetAJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BudgetAJ" type="462c0819:PsiDirectoryNode" />
+              <item name="budget_aj_app" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -292,12 +309,12 @@
       <workItem from="1579744450894" duration="3767000" />
       <workItem from="1579841888580" duration="10953000" />
       <workItem from="1579928246843" duration="838000" />
-      <workItem from="1579931905285" duration="3752000" />
+      <workItem from="1579931905285" duration="4450000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="367377000" />
+    <option name="totallyTimeSpent" value="368075000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="7" width="1936" height="1176" extended-state="0" />
@@ -457,16 +474,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/budget_aj_app/static/styles/create_budget.css" />
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2550">
-          <caret line="162" column="59" selection-start-line="162" selection-start-column="59" selection-end-line="162" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#120#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/budget_aj_app/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -526,16 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/users/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="689">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requiremets.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -548,8 +545,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="15" lean-forward="true" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+        <state relative-caret-position="889">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/budget_aj_app/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#120#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/budget_aj_app/users/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,11 +1,8 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, FloatField, SelectField, DateField
-from wtforms.fields.html5 import DateTimeLocalField
+from wtforms import StringField, PasswordField, SubmitField, FloatField, SelectField
 from wtforms.validators import DataRequired, Email, EqualTo, Optional, StopValidation, InputRequired
 from wtforms import ValidationError
-from flask_wtf.file import FileField, FileAllowed
 from budget_aj_app.models import User, Income, Budget
-from budget_aj_app.users import views
 from wtforms.fields.html5 import DateField
 
 
