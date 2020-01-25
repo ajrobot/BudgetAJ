@@ -1,0 +1,202 @@
+/**
+ * Slanted tabs with CSS 3D transforms
+ * See http://lea.verou.me/2013/10/slanted-tabs-with-css-3d-transforms/
+ */
+
+
+
+.maindiv{
+   position: fixed;
+   display: flex;
+   background-color: white;
+   margin-left: 15%;
+   width: 100%;
+   height: 100%;
+ }
+
+.maindiv input[type=submit]{
+    background-color: #39ace7;
+    border-color: #39ace7;
+}
+
+
+.maindiv .pie-div {
+   display: flex;
+   position: absolute;
+   width: 35%;
+   height: 42.5%;
+   left: 3%;
+   top: 20%
+
+ }
+
+.maindiv .bar-div {
+  position:  absolute;
+  display: flex;
+  width: 35%;
+  height: 30%;
+  left: 40%;
+  top: 5%
+ }
+
+.maindiv .add-expense-tab{
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 50%;
+    left: 40%;
+    top: 30%;
+}
+
+
+.maindiv  .budget-select-form{
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    left: 5%;
+    top: 5%;
+}
+
+
+.maindiv .budget-select-form .budget-select-button{
+    position: absolute;
+    width: 15%;
+    height: 20%;
+    margin: 10px;
+    left: 25%;
+    top: 10%;
+    align-content: center;
+    background-color: #39ace7;
+    border-color: #39ace7;
+}
+
+
+
+.maindiv .create-budget-form{
+    position: absolute;
+    display: flex;
+    width: 30%;
+    height: 18%;
+    left: 3%;
+    top: 5%;
+
+}
+
+.maindiv .add-income-form{
+    position: absolute;
+    display: flex;
+    width: 35%;
+    height: 18%;
+    left: 3%;
+    top: 25%;
+
+}
+
+.maindiv .add-expense-form {
+    position: absolute;
+    display: flex;
+    width: 35%;
+    height: 35%;
+    left: 3%;
+    top: 45%;
+
+ }
+
+
+.maindiv .working-space{
+    position: absolute;
+    top:1%;
+    left: 2%;
+    width: 37%;
+    height: 90%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #39ace7;
+
+}
+
+.maindiv .edit-budget-form{
+    position: absolute;
+    display: flex;
+    width: 37%;
+    height: 15%;
+    left: 3%;
+    top: 2%;
+
+}
+
+
+.maindiv .edit-income-form{
+    position: absolute;
+    display: block;
+    width: 37%;
+    height: 30%;
+    left: 3%;
+    top: 17%;
+
+}
+
+.maindiv .edit-expense-form {
+    position: absolute;
+    display: block;
+    width: 37%;
+    height: 45%;
+    left: 3%;
+    top: 46%;
+
+ }
+
+
+.maindiv .budget-tab-div {
+    position:  absolute;
+    display: flex;
+    width: 50%;
+    height: 25%;
+    left: 40%;
+    top: 0%;
+    align-content: stretch;
+
+}
+
+.maindiv .income-tab-div {
+    position:  absolute;
+    display: flex;
+    width: 50%;
+    height: 30%;
+    left: 40%;
+    top: 0%;
+
+}
+
+.maindiv .expense-tab-div-expenses {
+    position:  absolute;
+    display: flex;
+    width: 50%;
+    height: 60%;
+    left: 40%;
+    top: 30%;
+
+}
+
+.maindiv .edit-delete-form{
+    position: absolute;
+    width: 20%;
+    height: 5%;
+    left: 55%;
+    top: 80%;
+}
+
+.edit-delete-form input[type=submit]{
+    background-color: #39ace7
+}
+
+.edit-delete-form .inner button{
+    background-color: #39ace7
+}
+
+.inner
+{
+    display: inline-block;
+}
+
+

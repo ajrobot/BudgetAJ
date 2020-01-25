@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+        <p>Budget-AJ Login</p>
+    </div>
+
+    <!-- Login Form -->
+    <form  method="POST">
+      {{ form.hidden_tag()}}
+      <div class="">
+        {{ form.user_login_id(class="fadeIn second", placeholder="user")}}
+        {{ form.login_password(class="fadeIn third", placeholder="password")}}
+      </div>
+        {{ form.submit(class="fadeIn fourth") }}
+    </form>
+
+     <P>You don't have account? <a href="{{ url_for('users.create_user') }}">Create</a></P>
+        <!-- Remind Passowrd -->
+      <div id="formFooter">
+       <a class="underlineHover" href="#">Forgot Password?</a>
+      </div>
+
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+        <p>Create User Account</p>
+    </div>
+
+    <!-- Login Form -->
+    <form action="{{ url_for('users.create_user') }}" method="POST">
+        {{ form.hidden_tag()}}
+        {{ form.user_name(class="fadeIn second", placeholder="user name")}}
+        {{ form.email(class="fadeIn second", placeholder="email")}}
+        {{ form.password(class="fadeIn third", placeholder="password")}}
+        {{ form.pass_confirm(class="fadeIn third", placeholder="confirm password")}}
+        {{ form.submit(class="fadeIn fourth") }}
+    </form>
+
+     <P>You already have account? <a href="{{ url_for('users.login') }}">Login</a></P>
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Login with Google account</a>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

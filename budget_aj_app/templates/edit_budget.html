@@ -1,0 +1,147 @@
+{% extends "user_dashboard.html" %}
+{% block sidebarcontent %}
+    <div class="working-space">
+    </div>
+        <div class="edit-budget-form">
+            <form method="POST">
+                {{edit_budget_form.hidden_tag()}}
+                <h5>Edit Budget</h5>
+                <br>
+                <div class="form-row">
+
+                    <div class="form-group col-md-4">
+                        {{ edit_budget_form.budget_name.label}}
+                        {{ edit_budget_form.budget_name(placeholder="budget name", class="form-control") }}
+                    </div>
+                    <div class="form-group col-md-6">
+                        {{ edit_budget_form.budget_description.label }}
+                        {{ edit_budget_form.budget_description(placeholder="budget Description", class="form-control") }}
+                    </div>
+                    <div class="form-group col-md-2">
+                        <br>
+                        <h1></h1>
+                        {{edit_budget_form.edit_budget_submit(class="btn btn-primary form-control") }}
+                    </div>
+                </div>
+            </form>
+        </div>
+        <br>
+        <div class="edit-income-form">
+            <form method="POST">
+                {{ edit_income_form.hidden_tag()}}
+                <h5>Edit Income</h5>
+                <br>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        {{ edit_income_form.pay_period.label }}
+                        {{ edit_income_form.pay_period(placeholder="$", class="form-control")}}
+                    </div>
+                    <div class="form-group col-md-3">
+                        {{ edit_income_form.income_description.label }}
+                        {{ edit_income_form.income_description(placeholder="name", class="form-control")}}
+                    </div>
+                    <div class="form-group col-md-2">
+                        {{ edit_income_form.income_amount_month.label }}
+                        {{ edit_income_form.income_amount_month(placeholder="$", class="form-control")}}
+                    </div>
+                    <div class="form-group col-md-1">
+                        {{ edit_income_form.income_tax.label }}
+                        {{ edit_income_form.income_tax(placeholder="%", class="form-control")}}
+                    </div>
+                    <div class="form-group col-md-2">
+                        {{ edit_income_form.select_income.label }}
+                        {{ edit_income_form.select_income(class="form-control")}}
+                    </div>
+                </div>
+                <div class="form-group col-md-3">
+                    {{ edit_income_form.edit_income_submit(class="btn btn-primary form-control") }}
+                </div>
+            </form>
+            <form method="POST">
+                {{ delete_income_form.hidden_tag()}}
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        {{ delete_income_form.select_income.label }}
+                        {{ delete_income_form.select_income(class="form-control")}}
+                    </div>
+                    <div class="form-group col-md-3">
+                        <br>
+                        <h1></h1>
+                        {{ delete_income_form.income_delete_submit(class="btn btn-primary form-control")}}
+                    </div>
+                </div>
+            </form>
+        </div>
+        <br>
+        <div class="delete-income-form">
+
+        </div>
+
+        <div class="edit-expense-form">
+            <form method="POST">
+                {{ edit_expense_form.hidden_tag() }}
+                <br>
+                <h5>Edit Expenses</h5>
+                <br>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        {{ edit_expense_form.category.label }}
+                        {{ edit_expense_form.category(class="form-control")}}
+                    </div>
+                    <div class="form-group col-md-2">
+                        {{ edit_expense_form.expense_type.label }}
+                        {{ edit_expense_form.expense_type(class="form-control")}}
+                    </div>
+                    <div class="form-group col-md-3">
+                        {{ edit_expense_form.transaction_date.label }}
+                        {{ edit_expense_form.transaction_date(class='datepicker', class="form-control")}}
+                    </div>
+                    <div class="form-group col-md-2">
+                        {{ edit_expense_form.due_date.label }}
+                        {{ edit_expense_form.due_date(class="form-control")}}
+                    </div>
+
+                </div>
+                <br>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        {{ edit_expense_form.expense_description.label }}
+                        {{ edit_expense_form.expense_description(placeholder="discription", class="form-control")}}
+                    </div>
+                    <div class="form-group col-md-3">
+                        {{ edit_expense_form.expense_amount.label }}
+                        {{ edit_expense_form.expense_amount(placeholder="$", class="form-control")}}
+                    </div>
+                    <div class="form-group col-md-3">
+                        {{ edit_expense_form.select_expense.label }}
+                        {{ edit_expense_form.select_expense(class="form-control")}}
+                    </div>
+                </div>
+                <div class="form-group col-md-3">
+                    {{ edit_expense_form.edit_expenses_submit(class="btn btn-primary form-control") }}
+                </div>
+            </form>
+            <form method="POST">
+                {{ delete_expense_form.hidden_tag()}}
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        {{ delete_expense_form.select_expense.label }}
+                        {{ delete_expense_form.select_expense(class="form-control")}}
+                    </div>
+                    <div class="form-group col-md-3">
+                        <br>
+                        <h1></h1>
+                        {{ delete_expense_form.expense_delete_submit(class="btn btn-primary form-control") }}
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+    <div class="income-tab-div">
+        {{  income_tab }}
+    </div>
+    <div class="expense-tab-div-expenses">
+        {{  expenses_tab }}
+    </div>
+{% endblock %}

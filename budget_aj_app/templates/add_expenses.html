@@ -1,0 +1,48 @@
+{% extends "user_dashboard.html" %}
+{% block sidebarcontent %}
+    <div class="add-expense-form">
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            <br>
+            <h5>Add your expenses</h5>
+            <br>
+            <br>
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    {{ form.category.label }}
+                    {{ form.category(class="form-control")}}
+                </div>
+                <div class="form-group col-md-2">
+                    {{ form.expense_type.label }}
+                    {{ form.expense_type(class="form-control")}}
+                </div>
+                 <div class="form-group col-md-3">
+                    {{ form.transaction_date.label }}
+                    {{ form.transaction_date(class='datepicker', class="form-control")}}
+                </div>
+                 <div class="form-group col-md-2">
+                    {{ form.due_date.label }}
+                    {{ form.due_date(class="form-control")}}
+                </div>
+
+            </div>
+            <br>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    {{ form.expense_description.label }}
+                    {{ form.expense_description(placeholder="discription", class="form-control")}}
+                </div>
+                <div class="form-group col-md-3">
+                    {{ form.expense_amount.label }}
+                    {{ form.expense_amount(placeholder="$", class="form-control")}}
+                </div>
+            </div>
+            <div class="form-group col-md-3">
+                {{ form.submit }}
+            </div>
+        </form>
+    </div>
+    <div class="add-expense-in-expenses">
+        {{  expenses_tab }}
+    </div>
+{% endblock %}
