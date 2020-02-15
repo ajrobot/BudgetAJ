@@ -27,6 +27,7 @@ from enum import Enum
 
 users = Blueprint('users', __name__)
 
+
 @users.route('/create', methods=['GET', 'POST'])
 def create_user():
     """
