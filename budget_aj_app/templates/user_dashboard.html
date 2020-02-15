@@ -1,38 +1,71 @@
 {% extends "base.html" %}
 {% block content %}
+    {{ super() }}
 
-   <div class="container2">
-        <div class="sidebar">
-          <h2>Budget-AJ</h2>
+   <div class="container3">
+        <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+
            <ul>
-               <li> <a href="{{ url_for('users.user_dashboard') }}"><i class="fas fa-home"></i>Dashboard</a></li>
-               <li> <a href="{{ url_for('users.user_profile') }}"><i class="fas fa-home"></i>My Profile</a></li>
-               <li> <a href="{{ url_for('users.create_budget') }}"><i class="fas fa-home"></i>Create Budget</a></li>
-               <li> <a href="{{ url_for('users.edit_budget') }}"><i class="fas fa-home"></i>Edit Budget</a></li>
-               <li> <a href="{{ url_for('users.show_bills') }}"><i class="fas fa-home"></i>Bills</a></li>
-               <li> <a href="#"><i class="fas fa-home"></i>something</a></li>
+               <li> <a href="{{ url_for('users.user_dashboard') }}"><i class="fas fa-chart-pie"></i>Dashboard</a></li>
+               <li> <a href="{{ url_for('users.user_profile') }}"><i class="fas fa-user-alt"></i>My Profile</a></li>
+               <li> <a href="{{ url_for('users.create_budget') }}"><i class="fas fa-hand-holding-usd"></i>Create Budget</a></li>
+               <li> <a href="{{ url_for('users.edit_budget') }}"><i class="fas fa-edit"></i>Edit Budget</a></li>
+               <li> <a href="{{ url_for('users.expenses_view') }}"><i class="fas fa-file-invoice-dollar"></i>View Expenses</a></li>
            </ul>
         </div>
+        <div id="main">
+
+        </div>
    </div>
+    <script>
+        var mini = true;
+        function toggleSidebar() {
+            if (mini) {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                this.mini = false;
+            } else {
+                document.getElementById("mySidebar").style.width = "60px";
+                document.getElementById("main").style.marginLeft = "60px";
+                this.mini = true;
+            }
+        }
+
+    </script>
+
 
     <div class="maindiv">
 
 
         {% block sidebarcontent %}
+
             <div class="budget-select-form">
                 <form method="POST" >
-                    <div class="form-row">
-                        <div class="form-group col-md-3">
+                    <div class="form-row align-items-center">
+                        <div class="col-4">
                             {{ budget_select_form.hidden_tag()}}
-                            {{ budget_select_form.select_budget.label }}
+                            {{ budget_select_form.select_budget.label(style="color: white; font-size: 20px;") }}
                             {{ budget_select_form.select_budget(class="form-control")}}
                         </div>
-                        <div class="form-group">
-                            {{ budget_select_form.submit1(class='btn btn-primary btn-lg form-control budget-select-button') }}
+                        <div class="col-auto my-1">
+                          <br>
+                          <h5></h5>
+
+                            {{ budget_select_form.submit1(class='btn btn-primary form-control my-narrow-input') }}
                         </div>
+                        <div class="col-auto my-1">
+                            <form  method="POST" onSubmit="return confirm('Are you sure you want to delete this budget?');">
+                                {{ budget_delete_form.hidden_tag()}}
+                                <br>
+                                <h5></h5>
+                                {{ budget_delete_form.submit2(class='form-control btn btn-primary my-narrow-input') }}
+                            </form>
+                        </div>
+
                     </div>
                 </form>
             </div>
+
 
             <div class="pie-div">
                 {{ pie_div }}
@@ -43,17 +76,8 @@
             <div class="add-expense-tab">
                 {{ expenses_tab }}
             </div>
-            <div class="edit-delete-form">
-                <div align="center" class="inner">
-                    <form  method="POST" onSubmit="return confirm('Are you sure you want to delete this budget?');">
-                        {{ budget_delete_form.hidden_tag()}}
-                        {{ budget_delete_form.submit2(class='btn btn-primary btn-lg') }}
-                    </form>
-                </div>
-                <div align="center" class="inner">
-                    <button onclick="window.location.href='{{ url_for('users.create_budget') }}';" type="button" class="btn btn-primary btn-lg">Edit Budget</button>
-                </div>
-            </div>
+
+
         {% endblock %}
 
     </div>

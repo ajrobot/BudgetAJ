@@ -8,10 +8,15 @@
 .maindiv{
    position: fixed;
    display: flex;
-   background-color: white;
-   margin-left: 15%;
+   z-index: 80;
+   background-image: url("\static\kelvin-zyteng-Ncmd8uLe8H0-unsplash.jpg");
+   margin-top: 0;
+   margin-left: 250px;
    width: 100%;
-   height: 100%;
+   top: 50px;
+   bottom: 50px;
+   padding-top: 20px;
+   overflow: auto;
  }
 
 .maindiv input[type=submit]{
@@ -19,184 +24,576 @@
     border-color: #39ace7;
 }
 
+.js-plotly-plot .plot-container {
+    width: 700px;
+    height: 400px;
+}
 
 .maindiv .pie-div {
    display: flex;
    position: absolute;
-   width: 35%;
-   height: 42.5%;
-   left: 3%;
-   top: 20%
+   align-content: left;
+   width: 700px;
+   height: 500px;
+   left: 20px;
+   top: 25%;
+   box-shadow:0px 0px 20px;
 
  }
+
 
 .maindiv .bar-div {
   position:  absolute;
   display: flex;
-  width: 35%;
-  height: 30%;
-  left: 40%;
-  top: 5%
+  align-items: stretch;
+  width: 700px;
+  height: 250px;
+  left: 750px;
+  top: 10%;
+  box-shadow:0px 0px 20px;
+ }
+
+ .bar-div .js-plotly-plot .plot-container {
+     width: 700px;
+     height: 250px;
  }
 
 .maindiv .add-expense-tab{
     position: absolute;
     display: flex;
-    width: 60%;
-    height: 50%;
-    left: 40%;
-    top: 30%;
+    width: 700px;
+    height: 400px;
+    left: 750px;
+    top: 35%;
+    margin-top: 20px ;
+    box-shadow:0px 0px 20px;
 }
-
 
 .maindiv  .budget-select-form{
     position: absolute;
-    width: 40%;
-    height: 20%;
-    left: 5%;
-    top: 5%;
-}
-
-
-.maindiv .budget-select-form .budget-select-button{
-    position: absolute;
-    width: 15%;
-    height: 20%;
-    margin: 10px;
-    left: 25%;
+    width: 700px;
+    height: 100px;
+    left: 20px;
     top: 10%;
-    align-content: center;
-    background-color: #39ace7;
-    border-color: #39ace7;
 }
-
-
 
 .maindiv .create-budget-form{
     position: absolute;
     display: flex;
-    width: 30%;
-    height: 18%;
-    left: 3%;
-    top: 5%;
-
+    width: 700px;
+    height: 200px;
+    left: 20px;
+    top: 20px;
+    margin-top: 20px ;
+    box-shadow:0px 0px 15px;
+    padding: 20px;
+    background-color: white;
 }
 
 .maindiv .add-income-form{
     position: absolute;
     display: flex;
-    width: 35%;
-    height: 18%;
-    left: 3%;
-    top: 25%;
+    width: 700px;
+    height: 240px;
+    left: 20px;
+    top: 240px;
+    margin-top: 20px ;
+    box-shadow:0px 0px 15px;
+    padding: 20px;
+    background-color: white;
 
 }
 
 .maindiv .add-expense-form {
     position: absolute;
     display: flex;
-    width: 35%;
-    height: 35%;
-    left: 3%;
-    top: 45%;
-
+    width: 700px;
+    height: 390px;
+    left: 20px;
+    top: 500px;
+    margin-top: 20px ;
+    box-shadow:0px 0px 15px;
+    padding: 25px;
+    background-color: white;
  }
-
-
-.maindiv .working-space{
-    position: absolute;
-    top:1%;
-    left: 2%;
-    width: 37%;
-    height: 90%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #39ace7;
-
-}
 
 .maindiv .edit-budget-form{
     position: absolute;
     display: flex;
-    width: 37%;
-    height: 15%;
-    left: 3%;
-    top: 2%;
-
+    width: 700px;
+    height: 135px;
+    left: 20px;
+    top: 20px;
+    margin-top: 20px ;
+    box-shadow:0px 0px 15px;
+    padding: 15px;
+    background-color: white;
 }
-
 
 .maindiv .edit-income-form{
     position: absolute;
     display: block;
-    width: 37%;
-    height: 30%;
-    left: 3%;
-    top: 17%;
-
+    width: 700px;
+    height: 295px;
+    left: 20px;
+    top: 175px;
+    margin-top: 15px;
+    box-shadow:0px 0px 15px;
+    padding: 15px;
+    background-color: white;
 }
 
 .maindiv .edit-expense-form {
     position: absolute;
     display: block;
-    width: 37%;
-    height: 45%;
-    left: 3%;
-    top: 46%;
-
+    width: 700px;
+    height: 410px;
+    left: 20px;
+    top: 485px;
+    margin-top: 15px;
+    box-shadow:0px 0px 15px;
+    padding: 15px;
+    background-color: white;
  }
-
-
-.maindiv .budget-tab-div {
-    position:  absolute;
-    display: flex;
-    width: 50%;
-    height: 25%;
-    left: 40%;
-    top: 0%;
-    align-content: stretch;
-
-}
 
 .maindiv .income-tab-div {
     position:  absolute;
     display: flex;
-    width: 50%;
-    height: 30%;
-    left: 40%;
-    top: 0%;
-
+    width: 700px;
+    height: 330px;
+    left: 750px;
+    top: 20px;
+    margin-top: 20px ;
+    box-shadow:0px 0px 20px;
 }
 
 .maindiv .expense-tab-div-expenses {
     position:  absolute;
     display: flex;
-    width: 50%;
-    height: 60%;
-    left: 40%;
-    top: 30%;
-
+    width: 700px;
+    height: 520px;
+    left: 750px;
+    top: 370px;
+    margin-top: 20px ;
+    box-shadow:0px 0px 20px;
 }
 
-.maindiv .edit-delete-form{
-    position: absolute;
-    width: 20%;
-    height: 5%;
-    left: 55%;
-    top: 80%;
+.maindiv .edit-profile-form {
+    position:  absolute;
+    display: flex;
+    width: 700px;
+    height: 350px;
+    left: 20px;
+    top: 100px;
+    padding: 20px 40px;
+    box-shadow:0px 0px 20px;
+    background-color: white;
 }
 
-.edit-delete-form input[type=submit]{
-    background-color: #39ace7
+.maindiv .expenses-view-form {
+    position:  absolute;
+    display: flex;
+    width: 750px;
+    height: 100px;
+    left: 20px;
+    top: 20px;
+    padding: 10px;
+    align-content: center;
 }
 
-.edit-delete-form .inner button{
-    background-color: #39ace7
+.maindiv .expense-tab-div-view-expenses {
+    position:  absolute;
+    display: flex;
+    width: 700px;
+    height: 700px;
+    left: 20px;
+    top: 100px;
+    box-shadow:0px 0px 20px;
 }
 
-.inner
-{
-    display: inline-block;
+@media screen and (max-width: 1450px) {
+
+  .maindiv  .budget-select-form{
+      width: 458px;
+      height: 100px;
+  }
+  .maindiv .pie-div {
+     width: 480px;
+     height: 350px;
+     align-content: left;
+
+   }
+
+   .pie-div .js-plotly-plot .plot-container {
+       width: 480px;
+       height: 350px;
+   }
+
+   .bar-div .js-plotly-plot .plot-container {
+       width: 550px;
+       height: 250px;
+   }
+
+   .maindiv .bar-div {
+      width: 550px;
+      height: 250px;
+      z-index: 45;
+      left: 510px;
+    }
+
+    .add-expense-tab .js-plotly-plot .plot-container {
+         width: 550px;
+         height: 400px;
+       }
+
+    .maindiv .add-expense-tab{
+
+       width: 550px;
+       height: 400px;
+       left: 510px;
+       align-content: left;
+     }
+
+    .maindiv .create-budget-form{
+           width: 500px;
+    }
+
+    .maindiv .add-income-form{
+           width: 500px;
+    }
+
+    .maindiv .add-expense-form {
+           width: 500px;
+    }
+
+    .maindiv .edit-budget-form{
+            width: 500px;
+    }
+
+
+    .maindiv .edit-income-form{
+            width: 500px;
+    }
+
+    .maindiv .edit-expense-form {
+            width: 500px;
+    }
+
+    .maindiv .income-tab-div {
+            width: 600px;
+            left: 550px;
+    }
+    .income-tab-div .js-plotly-plot .plot-container {
+            width: 600px;
+
+    }
+
+    .maindiv .expense-tab-div-expenses {
+            width: 600px;
+            left: 550px;
+    }
+    .expense-tab-div-expenses .js-plotly-plot .plot-container {
+          width: 600px;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+  .maindiv{margin-left: 60px;}
+
+  .maindiv  .budget-select-form{
+      width: 600px;
+      height: 70px;
+      left: 30px;
+      top: 15px;
+  }
+
+  .pie-div .js-plotly-plot .plot-container {
+      width: 700px;
+      height: 400px;
+  }
+
+  .maindiv .pie-div {
+     width: 700px;
+     height: 400px;
+     left: 15px;
+     top: 100px;
+     padding: 0;
+     align-content: left;
+
+   }
+
+   .bar-div .js-plotly-plot .plot-container {
+       width: 700px;
+       height: 400px;
+   }
+
+   .maindiv .bar-div {
+      width: 700px;
+      height: 300px;
+      left: 15px;
+      top: 520px;
+      padding: 0;
+
+    }
+    .add-expense-tab .js-plotly-plot .plot-container {
+        width: 700px;
+        height: 400px;
+    }
+    .maindiv .add-expense-tab{
+       width: 700px;
+       height: 400px;
+       left: 15px;
+       top: 820px;
+       padding: 0;
+
+     }
+
+     .maindiv .create-budget-form{
+         width: 700px;
+     }
+
+     .maindiv .add-income-form{
+         width: 700px;
+     }
+
+     .maindiv .add-expense-form {
+         width: 700px;
+      }
+
+      .maindiv .edit-budget-form{
+          width: 700px;
+      }
+
+
+      .maindiv .edit-income-form{
+          width: 700px;
+      }
+
+      .maindiv .edit-expense-form {
+          width: 700px;
+       }
+
+       .maindiv .edit-profile-form {
+           width: 700px;
+        }
+
+      .maindiv .income-tab-div {
+          width: 700px;
+          left: 20px;
+          top: 910px;
+      }
+      .income-tab-div .js-plotly-plot .plot-container {
+          width: 700px;
+      }
+
+      .maindiv .expense-tab-div-expenses {
+          width: 700px;
+          left: 20px;
+          top: 1260px;
+      }
+      .expense-tab-div-expenses .js-plotly-plot .plot-container {
+          width: 700px;
+      }
+}
+
+@media screen and (max-width: 800px) {
+  .maindiv{margin-left: 60px;}
+
+  .maindiv  .budget-select-form{
+        width: 550px;
+
+  }
+
+  .pie-div .js-plotly-plot .plot-container {
+        width: 550px;
+
+  }
+
+  .bar-div .js-plotly-plot .plot-container {
+        width: 550px;
+
+  }
+
+  .add-expense-tab .js-plotly-plot .plot-container {
+      width: 550px;
+  }
+
+  .maindiv .pie-div{
+        width: 550px;
+   }
+
+  .maindiv .bar-div {
+        width: 550px;
+    }
+
+  .maindiv .add-expense-tab{
+        width: 550px;
+    }
+
+
+  .maindiv .create-budget-form{
+         width: 550px;
+    }
+
+  .maindiv .add-income-form{
+         width: 550px;
+    }
+
+  .maindiv .add-expense-form {
+         width: 550px;
+    }
+
+  .maindiv .edit-budget-form{
+        width: 550px;
+    }
+
+  .maindiv .edit-income-form{
+        width: 550px;
+    }
+
+  .maindiv .edit-expense-form {
+        width: 550px;
+     }
+
+  .maindiv .income-tab-div {
+        width: 550px;
+        left: 20px;
+        top: 910px;
+    }
+  .income-tab-div .js-plotly-plot .plot-container {
+        width: 550px;
+        height: 44vh;
+    }
+
+  .expense-tab-div-expenses .js-plotly-plot .plot-container {
+        width: 550px;
+        height: 44vh;
+     }
+  .maindiv .expense-tab-div-expenses {
+        width: 550px;
+        left: 20px;
+        top: 1260px;
+   }
+
+   .maindiv .edit-profile-form {
+        top: 40;
+        width: 550px;
+
+     }
+     .maindiv .expenses-view-form {
+         width: 570px;
+     }
+     .expense-tab-div-view-expenses .js-plotly-plot .plot-container {
+         width: 550px;
+      }
+     .maindiv .expense-tab-div-view-expenses {
+         width: 550px;
+     }
 }
 
 
+@media screen and (max-width: 600px) {
+  .maindiv{margin-left: 60px;}
+
+
+  .maindiv  .budget-select-form{
+      width: 300px;
+      height: 100px;
+      left: 15px;
+      top: 15px;
+  }
+
+  .pie-div .js-plotly-plot .plot-container {
+      width: 300px;
+      height: 220px;
+  }
+
+  .bar-div .js-plotly-plot .plot-container {
+      width: 300px;
+      height: 220px;
+  }
+
+  .maindiv .pie-div{
+     width: 300px;
+     height: 220px;
+     left: 10px;
+     top: 100px;
+     padding: 0;
+     align-content: left;
+
+   }
+
+  .maindiv .bar-div {
+      width: 300px;
+      height: 220px;
+      left: 10px;
+      top: 330px;
+      padding: 0;
+      align-content: left;
+    }
+
+    .maindiv .add-expense-tab{
+      display: none;
+    }
+
+
+     .maindiv .create-budget-form{
+         width: 500px;
+    }
+
+     .maindiv .add-income-form{
+         width: 500px;
+    }
+
+     .maindiv .add-expense-form {
+         width: 500px;
+    }
+
+    .maindiv .edit-budget-form{
+        width: 500px;
+    }
+
+
+    .maindiv .edit-income-form{
+        width: 500px;
+    }
+
+    .maindiv .edit-expense-form {
+        width: 500px;
+     }
+
+
+      .maindiv .income-tab-div {
+          width: 500px;
+          left: 20px;
+          top: 910px;
+    }
+      .income-tab-div .js-plotly-plot .plot-container {
+          width: 500px;
+    }
+
+      .maindiv .expense-tab-div-expenses {
+          width: 500px;
+          left: 20px;
+          top: 1260px;
+   }
+      .expense-tab-div-expenses .js-plotly-plot .plot-container {
+          width: 500px;
+   }
+
+   .maindiv .edit-profile-form {
+       width: 500px;
+     }
+
+     .maindiv .expenses-view-form {
+         width: 570px;
+     }
+     .expense-tab-div-view-expenses .js-plotly-plot .plot-container {
+         width: 500px;
+         height: 450px;
+      }
+     .maindiv .expense-tab-div-view-expenses {
+         width: 500px;
+         height: 450px;
+     }
+}

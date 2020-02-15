@@ -5,17 +5,17 @@
             {{ budget_form.hidden_tag()}}
             <h5>Create New Budget</h5>
             <br>
-            <div class="form-row">
+            <div class="form-row align-items-center">
 
-                <div class="form-group col-md-4">
+                <div class="col-4 my-1">
                     {{ budget_form.budget_name.label}}
                     {{ budget_form.budget_name(placeholder="budget name", class="form-control") }}
                 </div>
-                <div class="form-group col-md-6">
+                <div class="col-5 my-1">
                     {{ budget_form.budget_description.label }}
                     {{ budget_form.budget_description(placeholder="budget Description", class="form-control") }}
                 </div>
-                <div class="form-group col-md-2">
+                <div class="col-auto my-1">
                     <br>
                     <h1></h1>
                     {{ budget_form.submit(class="btn btn-primary form-control") }}
@@ -30,81 +30,78 @@
             {{ income_form.hidden_tag()}}
             <h5>Add your income</h5>
             <br>
-            <div class="form-row">
-                <div class="form-group col-md-2">
+            <div class="form-row align-items-center">
+                <div class="col-4 my-1">
                     {{ income_form.pay_period.label }}
                     {{ income_form.pay_period(placeholder="$", class="form-control")}}
                 </div>
-                <div class="form-group col-md-3">
+                <div class="col-4 my-1">
                     {{ income_form.income_description.label }}
                     {{ income_form.income_description(placeholder="name", class="form-control")}}
                 </div>
-                <div class="form-group col-md-3">
+                <div class="col-2 my-1">
                     {{ income_form.income_amount_month.label }}
                     {{ income_form.income_amount_month(placeholder="$", class="form-control")}}
                 </div>
-                <div class="form-group col-md-2">
+                <div class="col-2 my-1">
                     {{ income_form.income_tax.label }}
                     {{ income_form.income_tax(placeholder="%", class="form-control")}}
                 </div>
             </div>
-            <div class="form-row">
-                <div class="form-group col-md-3">
+            <div class="form-row align-items-center">
+                <div class="col-auto my-1">
                     {{ income_form.submit(class="btn btn-primary form-control") }}
                 </div>
             </div>
 
         </form>
     </div>
-    <div class="add-expense-form fadeIn third">
+    <div class="add-expense-form fadeIn third ">
         <form method="POST">
             {{ form.hidden_tag() }}
-            <br>
             <h5>Add your expenses</h5>
             <br>
-            <br>
-            <div class="form-row">
-                <div class="form-group col-md-3">
+            <div class="form-row align-items-center">
+                <div class="col-4 my-1">
                     {{ form.category.label }}
                     {{ form.category(class="form-control")}}
                 </div>
-                <div class="form-group col-md-2">
+                <div class="col-3 my-1">
                     {{ form.expense_type.label }}
                     {{ form.expense_type(class="form-control")}}
                 </div>
-                <div class="form-group col-md-3">
+                <div class="col-3 my-1">
                     {{ form.transaction_date.label }}
                     {{ form.transaction_date(class='datepicker', class="form-control")}}
                 </div>
-                <div class="form-group col-md-2">
+                <div class="col-2 my-1">
                     {{ form.due_date.label }}
-                    {{ form.due_date(class="form-control")}}
+                    {{ form.due_date(class="form-control", disabled=false) }}
                 </div>
-
             </div>
             <br>
-            <div class="form-row">
-                <div class="form-group col-md-4">
+            <div class="form-row align-items-center">
+                <div class="col-5 my-1">
                     {{ form.expense_description.label }}
                     {{ form.expense_description(placeholder="discription", class="form-control")}}
                 </div>
-                <div class="form-group col-md-3">
+                <div class="col-3 my-1">
                     {{ form.expense_amount.label }}
                     {{ form.expense_amount(placeholder="$", class="form-control")}}
                 </div>
             </div>
-            <div class="form-row">
-                <div class="form-group col-md-3">
+            <div class="form-row align-items-center">
+                <div class="col-auto my-1">
                     {{ form.submit(class="btn btn-primary form-control") }}
                 </div>
             </div>
         </form>
     </div>
 
-    <div class="income-tab-div">
+    <div class="income-tab-div fadeIn first">
         {{  income_tab }}
     </div>
-    <div class="expense-tab-div-expenses">
+    <div class="expense-tab-div-expenses fadeIn second">
         {{  expenses_tab }}
     </div>
 

@@ -1,48 +1,47 @@
 {% extends "user_dashboard.html" %}
 {% block sidebarcontent %}
-    <div class="edit-income-form">
+    <div class="edit-profile-form fadeIn first">
         <form method="POST">
             {{ form.hidden_tag()}}
             <h3>My Profile</h3>
             <br>
             <br>
-            <br>
-            <div class="form-row fadeIn first">
-                {{ form.hidden_tag()}}
-                <div class="form-group col-md-2">
+            <div class="form-row align-items-center">
+                <div class="col-3 my-1">
                     {{ form.user_name.label }}
                 </div>
-                <div class="form-group col-md-3">
+                <div class="col-4 my-1">
                     {{ form.current_user_name(readonly=true, class="form-control")}}
                 </div>
-                <div class="form-group col-md-3">
+                <div class="col-4 my-1">
                     {{ form.user_name(class="form-control", placeholder="user name")}}
                 </div>
             </div>
-            <div class="form-row fadeIn second">
-                <div class="form-group col-md-2">
+            <div class="form-row align-items-center">
+                <div class="col-3 my-1">
                     {{ form.email.label }}
                 </div>
-                <div class="form-group col-md-3">
+                <div class="col-4 my-1">
                     {{ form.current_email(readonly=true, class="form-control")}}
                 </div>
-                <div class="form-group col-md-3">
+                <div class="col-4 my-1">
                     {{ form.email(class="form-control", placeholder="email")}}
                 </div>
             </div>
-            <div class="form-row fadeIn third">
-                <div class="form-group col-md-2">
+            <div class="form-row align-items-center">
+                <div class="col-3 my-1">
                     {{ form.password.label }}
                 </div>
-                <div class="form-group col-md-3">
+                <div class="col-4 my-1">
                     {{ form.password(class="form-control", placeholder="password")}}
                 </div>
-                <div class="form-group col-md-3">
+                <div class="col-4 my-1">
                     {{ form.pass_confirm(class="form-control", placeholder="confirm password")}}
                 </div>
             </div>
-            <div class="form-group col-md-3">
-                {{ form.submit(class="btn btn-primary fadeIn fourth form-control") }}
+            <br>
+            <div class="col-4 my-1">
+                {{ form.submit(class="btn btn-primary form-control") }}
             </div>
         </form>
         <form method="POST">

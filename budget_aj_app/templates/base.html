@@ -1,54 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel= "stylesheet" type= "text/css" href='static/styles/login&create.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel= "stylesheet" type= "text/css" href='static/styles/basic.css'>
+    <link rel= "stylesheet" type= "text/css" href='static/styles/login&create.css'>
     <link rel= "stylesheet" type= "text/css" href='static/styles/dashboard.css'>
-    <link rel= "stylesheet" type= "text/css" href='static/styles/create_budget.css'>
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-<div class="container2">
-  <nav class="ajnavbar">
-        <ul>
-        <li><a class="navbar-brand active" href="{{ url_for('core.index') }}">BUDGET-AJ</a></li>
+  <style type="text/css">
+    body
+        {
+          background-image: url("/static/images/kelvin-zyteng-Ncmd8uLe8H0-unsplash.jpg");
+          background-size: cover;
+          background-position:center;
+        }
+  </style>
+    <div class="container2">
+        <nav class="ajnavbar" id="myAjnavbar">
 
-        <li><a href="{{ url_for('core.index') }}">Home</a></li>
+            <a class="active" href="{{ url_for('core.index') }}">BUDGET-AJ</a>
+            <a href="{{ url_for('core.index') }}">Home</a>
 
-        <li><a href="{{ url_for('core.about') }}">About</a></li>
+            <a href="{{ url_for('core.about') }}">About</a>
 
-        {% if current_user.is_authenticated %}
+            {% if current_user.is_authenticated %}
 
-        <li><a href="{{ url_for('users.user_dashboard') }}">Dashboard</a></li>
+            <a href="{{ url_for('users.user_dashboard') }}">Dashboard</a>
 
-        <li><a href="{{ url_for('users.logout') }}">Logout</a></li>
+            <a href="{{ url_for('users.logout') }}">Logout</a>
 
-        {% else %}
-        <li><a href="{{ url_for('users.login') }}">Login</a></li>
+            {% else %}
+            <a href="{{ url_for('users.login') }}">Login</a>
 
-        <li><a href="{{ url_for('users.create_user') }}">Create Account</a></li>
+            <a href="{{ url_for('users.create_user') }}">Create Account</a>
 
-        {% endif %}
-        </ul>
-  </nav>
-</div>
-    {% for mess in get_flashed_messages() %}
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            {% endif %}
+            <a href="javascript:void(0);" style="font-size:100%;" class="icon" onclick="myFunction()">&#9776;</a>
+        </nav>
+    </div>
+      {% for mess in get_flashed_messages() %}
+        <div class="alert alert-warning alert-dismissible fade show alert-div1" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
             {{ mess }}
         </div>
-    {% endfor %}
+      {% endfor %}
 
     {% block content %}
 
     {% endblock %}
+        <script>
+        function myFunction() {
+          var x = document.getElementById("myAjnavbar");
+          if (x.className === "ajnavbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "ajnavbar";
+          }
+        }
+        </script>
+        <footer>
+            <div class="footer-div">
+              <p>Copyright © <script>document.write( new Date().getFullYear() );</script> <a href="https://github.com/ajrobot/BudgetAJ"> ajrobot </a></p>
+            </div>
+        </footer>
 </body>
 </html>

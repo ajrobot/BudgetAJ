@@ -2,9 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adc780b3-c089-4e4e-9358-6ed1a606e043" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BudgetAJ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BudgetAJ.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/budget_aj_app/data.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/data.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/budget_aj_app/static/styles/basic.css" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/static/styles/basic.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/budget_aj_app/static/styles/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/static/styles/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/budget_aj_app/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/budget_aj_app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/budget_aj_app/templates/create_account.html" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/templates/create_account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/budget_aj_app/templates/create_budget.html" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/templates/create_budget.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/budget_aj_app/templates/edit_budget.html" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/templates/edit_budget.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/budget_aj_app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/budget_aj_app/templates/user_bill.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/budget_aj_app/templates/user_dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/templates/user_dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/budget_aj_app/templates/user_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/templates/user_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/budget_aj_app/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/users/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/budget_aj_app/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/users/views.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,106 +44,6 @@
       </path>
     </expand>
     <select />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/budget_aj_app/users/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/budget_aj_app/users/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#120#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="21" selection-start-column="21" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/budget_aj_app/templates/create_budget.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1853">
-              <caret line="109" selection-start-line="109" selection-end-line="109" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/budget_aj_app/static/styles/dashboard.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/budget_aj_app/static/styles/basic.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/budget_aj_app/templates/user_dashboard.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/budget_aj_app/templates/edit_budget.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/budget_aj_app/templates/user_profile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="43" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -154,83 +70,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/budget_aj_app/static/basic.css" />
-        <option value="$PROJECT_DIR$/budget_aj_app/core/views.py" />
-        <option value="$PROJECT_DIR$/budget_aj_app/static/styles/create.css" />
-        <option value="$PROJECT_DIR$/budget_aj_app/templates/login.html" />
-        <option value="$PROJECT_DIR$/budget_aj_app/templates/create_account.html" />
-        <option value="$PROJECT_DIR$/budget_aj_app/templates/about.html" />
-        <option value="$PROJECT_DIR$/budget_aj_app/templates/index.html" />
-        <option value="$PROJECT_DIR$/budget_aj_app/static/styles/side_nav_bar.css" />
-        <option value="$PROJECT_DIR$/budget_aj_app/templates/add_fixed_expenses.html" />
-        <option value="$PROJECT_DIR$/budget_aj_app/static/styles/create_budget.css" />
-        <option value="$PROJECT_DIR$/budget_aj_app/templates/user_bill.html" />
-        <option value="$PROJECT_DIR$/budget_aj_app/__init__.py" />
-        <option value="$PROJECT_DIR$/budget_aj_app/static/styles/sidebar.css" />
-        <option value="$PROJECT_DIR$/budget_aj_app/static/styles/login&amp;create.css" />
-        <option value="$PROJECT_DIR$/budget_aj_app/templates/base.html" />
-        <option value="$PROJECT_DIR$/budget_aj_app/templates/user_dashboard.html" />
-        <option value="$PROJECT_DIR$/budget_aj_app/templates/add_expenses.html" />
-        <option value="$PROJECT_DIR$/budget_aj_app/models.py" />
-        <option value="$USER_HOME$/Desktop/testcode.py" />
-        <option value="$PROJECT_DIR$/budget_aj_app/templates/edit_budget.html" />
-        <option value="$PROJECT_DIR$/budget_aj_app/templates/user_profile.html" />
-        <option value="$PROJECT_DIR$/budget_aj_app/static/styles/dashboard.css" />
-        <option value="$PROJECT_DIR$/budget_aj_app/templates/create_budget.html" />
-        <option value="$PROJECT_DIR$/budget_aj_app/static/styles/basic.css" />
-        <option value="$PROJECT_DIR$/migrations/Procfile" />
-        <option value="$PROJECT_DIR$/budget_aj_app/users/views.py" />
-        <option value="$PROJECT_DIR$/budget_aj_app/users/forms.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="3" />
-    <option name="y" value="7" />
-    <option name="width" value="1936" />
-    <option name="height" value="1176" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="BudgetAJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BudgetAJ" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BudgetAJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BudgetAJ" type="462c0819:PsiDirectoryNode" />
-              <item name="budget_aj_app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BudgetAJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BudgetAJ" type="462c0819:PsiDirectoryNode" />
-              <item name="budget_aj_app" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectId" id="1XpP1QUuxxfXqPvotcpMTCsWRt0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/testcode.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -238,18 +91,6 @@
       <recent name="C:\Users\JOJO\Documents\Home Budget Project\BudgetAJ\budget_aj_app\static\styles" />
       <recent name="C:\Users\JOJO\Documents\Home Budget Project\BudgetAJ\budget_aj_app\templates" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Python.FlaskServer" factoryName="Flask server">
@@ -306,266 +147,30 @@
       <workItem from="1579744450894" duration="3767000" />
       <workItem from="1579841888580" duration="10953000" />
       <workItem from="1579928246843" duration="838000" />
-      <workItem from="1579931905285" duration="6294000" />
+      <workItem from="1579931905285" duration="6893000" />
+      <workItem from="1580104794990" duration="9458000" />
+      <workItem from="1580185649818" duration="6926000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="369919000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="3" y="7" width="1936" height="1176" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24413647" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32981783" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32981783" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.32995737" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32995737" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20469083" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32981783" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32981783" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32995737" />
-    </layout-to-restore>
+    <option name="totallyTimeSpent" value="386902000" />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/static/styles/create.css" />
-    <entry file="file://$PROJECT_DIR$/migrations/versions/8d067fee7ced_create_the_first_db.py" />
-    <entry file="file://$PROJECT_DIR$/migrations/versions/aa88fcd31cbf_create_the_first_db.py" />
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/core/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/static/styles/side_nav_bar.css" />
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/templates/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/templates/user_bill.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
-          <folding>
-            <element signature="e#129#138#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/static/styles/sidebar.css" />
-    <entry file="file://$PROJECT_DIR$/migrations/script.py.mako">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/README">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/env.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/alembic.ini">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#2370#2377#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/testcode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="689">
-          <caret line="83" column="41" lean-forward="true" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/static/styles/login&amp;create.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="26" selection-start-line="21" selection-start-column="2" selection-end-line="25" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/templates/add_expenses.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/static/styles/create_budget.css" />
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/templates/create_account.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/templates/create_budget.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1853">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/static/styles/dashboard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/static/styles/basic.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/templates/user_dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/templates/edit_budget.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/templates/user_profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="43" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requiremets.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/users/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget_aj_app/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#120#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="463" y="225" key="SettingsEditor" timestamp="1581740380094">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="463" y="225" key="SettingsEditor/0.0.1920.1160/-1920.4.1920.1160@0.0.1920.1160" timestamp="1581740380094" />
+    <state x="662" y="407" key="com.intellij.ide.util.TipDialog" timestamp="1581739858273">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="662" y="407" key="com.intellij.ide.util.TipDialog/0.0.1920.1160/-1920.4.1920.1160@0.0.1920.1160" timestamp="1581739858273" />
+    <state x="653" y="437" width="666" height="286" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1581739945501">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="653" y="437" width="666" height="286" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1920.1160/-1920.4.1920.1160@0.0.1920.1160" timestamp="1581739945501" />
   </component>
 </project>

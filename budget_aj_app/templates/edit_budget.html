@@ -1,23 +1,21 @@
 {% extends "user_dashboard.html" %}
 {% block sidebarcontent %}
-    <div class="working-space">
-    </div>
-        <div class="edit-budget-form">
+        <div class="edit-budget-form fadeIn first">
             <form method="POST">
                 {{edit_budget_form.hidden_tag()}}
                 <h5>Edit Budget</h5>
-                <br>
-                <div class="form-row">
 
-                    <div class="form-group col-md-4">
+                <div class="form-row align-items-center">
+
+                    <div class="col-4 my-1">
                         {{ edit_budget_form.budget_name.label}}
                         {{ edit_budget_form.budget_name(placeholder="budget name", class="form-control") }}
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="col-5 my-1">
                         {{ edit_budget_form.budget_description.label }}
                         {{ edit_budget_form.budget_description(placeholder="budget Description", class="form-control") }}
                     </div>
-                    <div class="form-group col-md-2">
+                    <div class="col-auto my-1">
                         <br>
                         <h1></h1>
                         {{edit_budget_form.edit_budget_submit(class="btn btn-primary form-control") }}
@@ -26,45 +24,48 @@
             </form>
         </div>
         <br>
-        <div class="edit-income-form">
+        <div class="edit-income-form fadeIn second">
             <form method="POST">
                 {{ edit_income_form.hidden_tag()}}
                 <h5>Edit Income</h5>
-                <br>
-                <div class="form-row">
-                    <div class="form-group col-md-2">
+                <div class="form-row align-items-center">
+                    <div class="col-3 my-1">
                         {{ edit_income_form.pay_period.label }}
                         {{ edit_income_form.pay_period(placeholder="$", class="form-control")}}
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="col-4 my-1">
                         {{ edit_income_form.income_description.label }}
                         {{ edit_income_form.income_description(placeholder="name", class="form-control")}}
                     </div>
-                    <div class="form-group col-md-2">
+                    <div class="col-3 my-1">
                         {{ edit_income_form.income_amount_month.label }}
                         {{ edit_income_form.income_amount_month(placeholder="$", class="form-control")}}
                     </div>
-                    <div class="form-group col-md-1">
+                    <div class="col-2 my-1">
                         {{ edit_income_form.income_tax.label }}
                         {{ edit_income_form.income_tax(placeholder="%", class="form-control")}}
                     </div>
-                    <div class="form-group col-md-2">
-                        {{ edit_income_form.select_income.label }}
-                        {{ edit_income_form.select_income(class="form-control")}}
-                    </div>
                 </div>
-                <div class="form-group col-md-3">
-                    {{ edit_income_form.edit_income_submit(class="btn btn-primary form-control") }}
+                <div class="form-row align-items-center">
+                  <div class="col-3 my-1">
+                      {{ edit_income_form.select_income.label }}
+                      {{ edit_income_form.select_income(class="form-control")}}
+                  </div>
+                  <div class="col-auto my-1">
+                      <br>
+                      <h1></h1>
+                      {{ edit_income_form.edit_income_submit(class="btn btn-primary form-control") }}
+                  </div>
                 </div>
             </form>
             <form method="POST">
                 {{ delete_income_form.hidden_tag()}}
-                <div class="form-row">
-                    <div class="form-group col-md-2">
+                <div class="form-row align-items-center">
+                    <div class="col-3 my-1">
                         {{ delete_income_form.select_income.label }}
                         {{ delete_income_form.select_income(class="form-control")}}
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="col-auto my-1">
                         <br>
                         <h1></h1>
                         {{ delete_income_form.income_delete_submit(class="btn btn-primary form-control")}}
@@ -72,63 +73,57 @@
                 </div>
             </form>
         </div>
-        <br>
-        <div class="delete-income-form">
-
-        </div>
-
-        <div class="edit-expense-form">
+        <div class="edit-expense-form fadeIn third">
             <form method="POST">
                 {{ edit_expense_form.hidden_tag() }}
-                <br>
                 <h5>Edit Expenses</h5>
                 <br>
-                <div class="form-row">
-                    <div class="form-group col-md-3">
+                <div class="form-row align-items-center">
+                    <div class="col-4 my-1">
                         {{ edit_expense_form.category.label }}
                         {{ edit_expense_form.category(class="form-control")}}
                     </div>
-                    <div class="form-group col-md-2">
+                    <div class="col-3 my-1">
                         {{ edit_expense_form.expense_type.label }}
                         {{ edit_expense_form.expense_type(class="form-control")}}
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="col-3 my-1">
                         {{ edit_expense_form.transaction_date.label }}
                         {{ edit_expense_form.transaction_date(class='datepicker', class="form-control")}}
                     </div>
-                    <div class="form-group col-md-2">
+                    <div class="col-2 my-1">
                         {{ edit_expense_form.due_date.label }}
                         {{ edit_expense_form.due_date(class="form-control")}}
                     </div>
 
                 </div>
                 <br>
-                <div class="form-row">
-                    <div class="form-group col-md-4">
+                <div class="form-row align-items-center">
+                    <div class="col-4 my-1">
                         {{ edit_expense_form.expense_description.label }}
                         {{ edit_expense_form.expense_description(placeholder="discription", class="form-control")}}
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="col-3 my-1">
                         {{ edit_expense_form.expense_amount.label }}
                         {{ edit_expense_form.expense_amount(placeholder="$", class="form-control")}}
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="col-2.5 my-1">
                         {{ edit_expense_form.select_expense.label }}
                         {{ edit_expense_form.select_expense(class="form-control")}}
                     </div>
-                </div>
-                <div class="form-group col-md-3">
-                    {{ edit_expense_form.edit_expenses_submit(class="btn btn-primary form-control") }}
+                    <div class="col-auto my-1">
+                        {{ edit_expense_form.edit_expenses_submit(class="btn btn-primary form-control") }}
+                    </div>
                 </div>
             </form>
             <form method="POST">
                 {{ delete_expense_form.hidden_tag()}}
-                <div class="form-row">
-                    <div class="form-group col-md-2">
+                <div class="form-row align-items-center">
+                    <div class="col-3 my-1">
                         {{ delete_expense_form.select_expense.label }}
                         {{ delete_expense_form.select_expense(class="form-control")}}
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="col-auto my-1">
                         <br>
                         <h1></h1>
                         {{ delete_expense_form.expense_delete_submit(class="btn btn-primary form-control") }}
@@ -138,10 +133,10 @@
         </div>
 
 
-    <div class="income-tab-div">
+    <div class="income-tab-div fadeIn first">
         {{  income_tab }}
     </div>
-    <div class="expense-tab-div-expenses">
+    <div class="expense-tab-div-expenses fadeIn second">
         {{  expenses_tab }}
     </div>
 {% endblock %}

@@ -16,6 +16,10 @@
         {{ form.email(class="fadeIn second", placeholder="email")}}
         {{ form.password(class="fadeIn third", placeholder="password")}}
         {{ form.pass_confirm(class="fadeIn third", placeholder="confirm password")}}
+        <div class="col-auto my-1">
+          <a href="{{ url_for('core.about') }}">Read the disclaimer before check-in!!!</a>
+          {{ form.disclaimer_checkin(class="fadeIn third") }}
+        </div>
         {{ form.submit(class="fadeIn fourth") }}
     </form>
 
