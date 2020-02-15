@@ -24,9 +24,9 @@
     border-color: #39ace7;
 }
 
-.js-plotly-plot .plot-container {
+.pie-div .js-plotly-plot .plot-container {
     width: 700px;
-    height: 400px;
+    height: 45%;
 }
 
 .maindiv .pie-div {
@@ -34,35 +34,40 @@
    position: absolute;
    align-content: left;
    width: 700px;
-   height: 500px;
+   height: 45%;
    left: 20px;
    top: 25%;
    box-shadow:0px 0px 20px;
 
  }
 
+.bar-div .js-plotly-plot .plot-container {
+     width: 700px;
+     height: 25%;
+ }
 
 .maindiv .bar-div {
   position:  absolute;
   display: flex;
   align-items: stretch;
   width: 700px;
-  height: 250px;
+  height: 25%;
   left: 750px;
   top: 10%;
   box-shadow:0px 0px 20px;
  }
 
- .bar-div .js-plotly-plot .plot-container {
-     width: 700px;
-     height: 250px;
- }
+
+.add-expense-tab .js-plotly-plot .plot-container {
+    width: 700px;
+    height: 45%;
+}
 
 .maindiv .add-expense-tab{
     position: absolute;
     display: flex;
     width: 700px;
-    height: 400px;
+    height: 45%;
     left: 750px;
     top: 35%;
     margin-top: 20px ;
@@ -72,9 +77,9 @@
 .maindiv  .budget-select-form{
     position: absolute;
     width: 700px;
-    height: 100px;
+    height: 20%;
     left: 20px;
-    top: 10%;
+    top: 5%;
 }
 
 .maindiv .create-budget-form{
@@ -156,6 +161,11 @@
     background-color: white;
  }
 
+.income-tab-div .js-plotly-plot .plot-container {
+    width: 700px;
+    height: 330px;
+}
+
 .maindiv .income-tab-div {
     position:  absolute;
     display: flex;
@@ -165,6 +175,11 @@
     top: 20px;
     margin-top: 20px ;
     box-shadow:0px 0px 20px;
+}
+
+.expense-tab-div-expenses .js-plotly-plot .plot-container {
+    width: 700px;
+    height: 520px;
 }
 
 .maindiv .expense-tab-div-expenses {
@@ -201,6 +216,12 @@
     align-content: center;
 }
 
+.expense-tab-div-view-expenses .js-plotly-plot .plot-container {
+    width: 700px;
+    height: 700px;
+}
+
+
 .maindiv .expense-tab-div-view-expenses {
     position:  absolute;
     display: flex;
@@ -215,29 +236,27 @@
 
   .maindiv  .budget-select-form{
       width: 458px;
-      height: 100px;
+
   }
   .maindiv .pie-div {
      width: 480px;
-     height: 350px;
+
      align-content: left;
 
    }
 
    .pie-div .js-plotly-plot .plot-container {
        width: 480px;
-       height: 350px;
+
    }
 
    .bar-div .js-plotly-plot .plot-container {
        width: 550px;
-       height: 250px;
+
    }
 
    .maindiv .bar-div {
       width: 550px;
-      height: 250px;
-      z-index: 45;
       left: 510px;
     }
 

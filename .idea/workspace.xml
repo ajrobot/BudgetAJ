@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adc780b3-c089-4e4e-9358-6ed1a606e043" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/BudgetAJ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BudgetAJ.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_aj_app/data.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/data.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_aj_app/static/styles/basic.css" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/static/styles/basic.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/budget_aj_app/static/styles/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/static/styles/dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_aj_app/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_aj_app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_aj_app/templates/create_account.html" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/templates/create_account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_aj_app/templates/create_budget.html" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/templates/create_budget.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_aj_app/templates/edit_budget.html" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/templates/edit_budget.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_aj_app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_aj_app/templates/user_bill.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_aj_app/templates/user_dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/templates/user_dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_aj_app/templates/user_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/templates/user_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_aj_app/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/users/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_aj_app/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/budget_aj_app/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
