@@ -18,6 +18,8 @@ class RequiredIf(object):
         other_field = form._fields.get(self.other_field_name)
         if other_field.data == 'month_bill':
             field.validators.insert(1, DataRequired())
+        else:
+            field.validators.insert(1, Optional(strip_whitespace=True))
 
 class LoginForm(FlaskForm):
     user_login_id = StringField(validators=[DataRequired()])
