@@ -18,7 +18,6 @@ body {
   height: 100vh;
   font-weight: bold;
   color: blue;
-  position: relative;
 }
 
 a {
@@ -126,7 +125,6 @@ body .budgetlogo h1{
     z-index: 100; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    height: 50px;
 }
 
 .container2 .ajnavbar{
