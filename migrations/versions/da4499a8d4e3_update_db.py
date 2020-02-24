@@ -1,8 +1,8 @@
-"""restart
+"""update db
 
-Revision ID: fed82921e08d
+Revision ID: da4499a8d4e3
 Revises: 
-Create Date: 2020-01-20 12:57:08.598341
+Create Date: 2020-02-19 02:00:26.336863
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = 'fed82921e08d'
+revision = 'da4499a8d4e3'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -51,7 +51,7 @@ def upgrade():
     sa.Column('expense_amount', sa.Float(), nullable=False),
     sa.Column('category', sa.String(length=64), nullable=False),
     sa.Column('expense_type', sa.String(length=32), nullable=False),
-    sa.Column('due_date', sa.Integer(), nullable=True),
+    sa.Column('due_date', sa.DateTime(), nullable=True),
     sa.Column('transaction_date', sa.DateTime(), nullable=False),
     sa.Column('creation_date', sa.DateTime(), nullable=False),
     sa.Column('budget_id', sa.Integer(), nullable=False),

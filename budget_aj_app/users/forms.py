@@ -96,6 +96,7 @@ class AddExpensesForm(FlaskForm):
     expense_amount = FloatField('Amount', validators=[DataRequired()])
     due_date = SelectField('Due Day', coerce=int, validators=[RequiredIf('expense_type')])
     transaction_date = DateField('Date', format="%Y-%m-%d", validators=[Optional(strip_whitespace=True)])
+    expense_months_period = SelectField('Months Period', coerce=int, validators=[RequiredIf('expense_type')])
     submit = SubmitField('Add Expense')
 
 

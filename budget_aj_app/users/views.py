@@ -23,6 +23,7 @@ import plotly.graph_objects as go
 from datetime import datetime, date
 from sqlalchemy.sql import func, extract
 from enum import Enum
+from dateutil.relativedelta import *
 
 
 users = Blueprint('users', __name__)
@@ -176,6 +177,7 @@ def create_budget():
     form = AddExpensesForm()
     form.category.choices = category_choice()
     form.due_date.choices = [(0, "")]+[(i, str(i)) for i in range(1, 29)]
+    form.expense_months_period.choices = [(0, "")] + [(i, str(i)) for i in range(2, 25)]
 
     # validate create budget form and apply it to DB
     if budget_form.validate_on_submit():
@@ -194,7 +196,7 @@ def create_budget():
         return redirect(url_for('users.create_budget'))
 
     # validate add income form and apply it to DB
-    if income_form.validate_on_submit():
+    elif income_form.validate_on_submit():
         if selected_budget() != 0:
             amount_month = IncomeMonth.get_income_month(income_form.pay_period.data, income_form.income_amount_month.data)
             income = Income(budget_id=selected_budget(),
@@ -209,17 +211,32 @@ def create_budget():
             flash('Please select your budget and filling all the required fields.!!')
 
     # validate add expenses form and apply it to DB
-    if form.validate_on_submit():
+    elif form.validate_on_submit():
         if selected_budget() != 0:
             print(selected_budget())
-            expenses = Expenses(budget_id=selected_budget(),
-                                expense_description=form.expense_description.data,
-                                expense_amount=form.expense_amount.data,
-                                category=form.category.data,
-                                expense_type=form.expense_type.data,
-                                transaction_date=form.transaction_date.data,
-                                due_date=form.due_date.data)
-            db.session.add(expenses)
+            if form.expense_months_period.data> 0:
+                currentMonth = datetime.now().month
+                currentYear = datetime.now().year
+                due_date = date(currentYear, currentMonth, form.due_date.data)
+                for i in range(form.expense_months_period.data):
+                    expenses = Expenses(budget_id=selected_budget(),
+                                        expense_description=form.expense_description.data,
+                                        expense_amount=form.expense_amount.data,
+                                        category=form.category.data,
+                                        expense_type=form.expense_type.data,
+                                        transaction_date= due_date + relativedelta(months=+1),
+                                        due_date = due_date)
+                    due_date = due_date + relativedelta(months=+1)
+                    db.session.add(expenses)
+            else:
+                expenses = Expenses(budget_id=selected_budget(),
+                                    expense_description=form.expense_description.data,
+                                    expense_amount=form.expense_amount.data,
+                                    category=form.category.data,
+                                    expense_type=form.expense_type.data,
+                                    transaction_date=form.transaction_date.data
+                                    )
+                db.session.add(expenses)
             db.session.commit()
             flash('Expense added to the budget!')
             return redirect(url_for('users.create_budget'))
@@ -357,7 +374,9 @@ def create_pie():
     # pull is given as a fraction of the pie radius
     my_plot_div = plot({"data":[go.Pie(labels=labels, values=values, hole=.3)], # data edit
                         "layout": go.Layout(margin=dict(t=20, b=20, l=20, r=20))}, output_type='div') # layout edit
+
     return my_plot_div
+
 
 
 def create_bar():
@@ -480,18 +499,16 @@ def expenses_table(expense_data=None):
             categories.append(category_choice(expense.category))
             expenses_amount.append(round(expense.expense_amount, 2))
             transaction_dates.append(expense.transaction_date.strftime('%m/%d/%Y'))
-            due_date = expense.due_date if expense.due_date is not None and expense.due_date != 0 else ""
-            due_dates_list.append(due_date)
             reports.append(due_dates(expense.due_date))
-    fig = plot({"data":[go.Table(columnorder=[1, 2, 3, 4, 5, 6, 7],
-                                 columnwidth=[25, 40, 60, 35, 45, 18, 95],
-                                 header=dict(values=['ID', 'Category', 'Description', 'Amount', 'Transaction', 'Due', 'Reports'],
+    fig = plot({"data":[go.Table(columnorder=[1, 2, 3, 4, 5, 6],
+                                 columnwidth=[25, 40, 60, 35, 65, 90],
+                                 header=dict(values=['ID', 'Category', 'Description', 'Amount', 'Transaction/Due-Date', 'Reports'],
                                              fill_color='#39ace7',
                                              font=dict(color='white', size=12),
                                              #fill=dict(color=['#39ace7', 'white']),
                                              align='center'),
                                  cells=dict(values=[id, categories, expenses_description, expenses_amount, transaction_dates,
-                                                    due_dates_list, reports],
+                                                    reports],
                                             fill_color='lightcyan',
                                             align='center'))],
                 "layout":go.Layout(margin=dict(t=50, l=25, r=25, b=50))}, output_type='div')
@@ -505,12 +522,13 @@ def due_dates(due_day):
         :param: due_day of an integer value for due day
         :return: a string of reminder report if required and an empty string if it's not
     """
-    if due_day and due_day != 0:
+    if due_day:
         current_day = datetime.now().day
         current_month = datetime.now().month
         current_year = datetime.now().year
         current_date = date(current_year, current_month, current_day)
-        due_date = date(current_year, current_month, due_day)
+        due_date = date(due_day.year, due_day.month, due_day.day)
+
         delta = due_date - current_date
         if delta.days < 5 and delta.days >= 0:
             return f"Due in {delta.days} day/s!"
