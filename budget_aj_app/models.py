@@ -111,12 +111,12 @@ class Expenses(db.Model, UserMixin):
     expense_amount = db.Column(db.Float, nullable=False)
     category = db.Column(db.String(64), nullable=False)
     expense_type = db.Column(db.String(32), nullable=False)
-    due_date = db.Column(db.Integer, nullable=True)
-    transaction_date = db.Column(db.DateTime, nullable=False, default=datetime.utcnow())
+    due_date = db.Column(db.DateTime, nullable=True)
+    transaction_date = db.Column(db.DateTime, nullable=False)
     creation_date = db.Column(db.DateTime, nullable=False, default=datetime.utcnow(), onupdate=datetime.utcnow())
     budget_id = db.Column(db.Integer, db.ForeignKey('budget.id', ondelete='CASCADE'), nullable=False)
 
-    def __init__(self, budget_id, expense_description, expense_amount, category, expense_type, transaction_date=None, due_date=None):
+    def __init__(self, budget_id, expense_description, expense_amount, category, expense_type, transaction_date, due_date=None):
         self.budget_id = budget_id
         self.expense_description = expense_description
         self.expense_amount = expense_amount
